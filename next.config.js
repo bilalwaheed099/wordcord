@@ -9,7 +9,12 @@ const nextConfig = {
     return config;
   },
   images: {
-    domains: ['uploadthing.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
 };
 
